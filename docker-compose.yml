@@ -9,6 +9,6 @@ services:
       - PLEX_CLAIM=${PLEX_CLAIM:-CHANGE_ME}
     network_mode: host
     volumes:
-      - ${VOLUME_PATH:-.}/config:/config
-      - ${VOLUME_PATH:-.}/transcode:/transcode
-      - ${VOLUME_PATH:-.}/media:/media
+      - ./config:/config
+      - ./transcode:/transcode
+      - ./media:/media
